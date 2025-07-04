@@ -1,1 +1,4 @@
 .idea
+orders.json
+.env
+.gitignore

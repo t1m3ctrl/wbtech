@@ -1,0 +1,19 @@
+port: "8000"
+
+db:
+  host: "postgres"
+  port: "5432"
+  username: "user"
+  dbname: "orders_db"
+  sslmode: "disable"
+
+kafka:
+  brokers:
+    - "kafka:9092"
+  topic: "orders"
+  group_id: "order-service-group"
+
+cache:
+  limit: "5" # cache size
+  dump: "orders.json" # cache dump
+  ttl: "2m"

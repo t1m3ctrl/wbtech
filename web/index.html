@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Order Viewer</h1>
+    <div class="search-box">
+        <input type="text" id="orderId" placeholder="Enter Order ID">
+        <button id="searchBtn">Search</button>
+    </div>
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="error" class="hidden error"></div>
+    <div id="responseTime" class="hidden"></div>
+    <div id="orderData" class="hidden json-tree-viewer"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
